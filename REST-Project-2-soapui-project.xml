@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="6c255a72-225c-477c-a3ad-63bf8c4c3225" activeEnvironment="Default" name="REST Project 2" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="34d56b4f-d2ae-4a48-83db-6b0fa7675f17" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://restcountries.eu" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://restcountries.eu</con:endpoint></con:endpoints><con:resource name="All" path="/rest/v2/all" id="44eb0a0d-5133-43df-a6e8-5b865aa7dc5d"><con:settings/><con:parameters/><con:method name="All 1" id="1a92bc96-3a0f-47ee-b97b-becb962ab9ce" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="f4a017c8-350d-4634-ab1a-6928aaf58e98" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:originalUri>https://restcountries.eu/rest/v2/all</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="dbe028e0-ee96-4d54-9d8b-1981944e5d46" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://restcountries.eu" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://restcountries.eu</con:endpoint></con:endpoints><con:resource name="United" path="/rest/v2/name/{countryName}" id="df55521e-61db-4cd2-b364-56cbcbf94bed"><con:settings/><con:parameters><con:parameter><con:name>countryName</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="United 1" id="f2c875c9-37cf-4838-88bf-b3ea9e655ae3" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="eb52eb45-67b9-4f9c-a6de-62e0e9a7b9c1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:originalUri>https://restcountries.eu/rest/v2/name/united</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="countryName" value="taiwan" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>countryName</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="4c86183a-4d02-4ee9-8d7c-2cf715ea576b" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://restcountries.eu" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://restcountries.eu</con:endpoint></con:endpoints><con:resource name="Aruba" path="/rest/v2/name/aruba" id="729a3c2d-1ae9-47ad-8c5e-772d8ea92da4"><con:settings/><con:parameters><con:parameter><con:name>fullText</con:name><con:value>true</con:value><con:style>QUERY</con:style><con:default>true</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Aruba 1" id="a9bfcb66-1aa7-4b88-8bee-2b6b7c20232e" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="b373eeef-2f84-4a95-8ec0-d170c1107e8c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:originalUri>https://restcountries.eu/rest/v2/name/aruba</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="fullText" value="false" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>fullText</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="81b7e865-fd87-4418-b650-74d14e112bc5" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8e0d6cf4-04bd-4bbb-b79d-7178b0cd620b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetAllCountry" id="941698d4-c4c0-478a-87a4-4281f7d7a1b7"><con:settings/><con:config service="https://restcountries.eu" resourcePath="/rest/v2/all" methodName="All 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAllCountry" id="f4a017c8-350d-4634-ab1a-6928aaf58e98" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:originalUri>https://restcountries.eu/rest/v2/all</con:originalUri><con:assertion type="Simple Contains" id="b4c0442e-bb63-485a-814e-eecbb18148c4" name="Contains"><con:configuration><token>Africa</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GetCounrtiesByName" id="08d021e8-f49e-40cf-8f36-c42006e7692f"><con:settings/><con:config service="https://restcountries.eu" resourcePath="/rest/v2/name/{countryName}" methodName="United 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCounrtiesByName" id="eb52eb45-67b9-4f9c-a6de-62e0e9a7b9c1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:originalUri>https://restcountries.eu/rest/v2/name/united</con:originalUri><con:assertion type="Simple Contains" id="540352f3-25e0-4997-b887-e285a32e8037" name="Contains"><con:configuration><token>Taiwan</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="JsonPath Count" id="b30643e2-6835-479e-b48e-98cb8216a90a" name="JsonPath Count"><con:configuration><path>[0].name</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Count" id="6a6b0b2a-5c5c-4335-b115-217e1a59a5f2"><con:configuration/></con:assertion><con:assertion type="JsonPath Existence Match" id="b8507009-477a-4fa2-bfcb-d58345df1e52" name="JsonPath Existence Match"><con:configuration><path>[0].name</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e7d7059a-6fd5-4600-a509-de7e9f128d87" name="JsonPath Match"><con:configuration><path>[0].name</path><content>Taiwan</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="3fd10c71-8c01-4125-b047-a088dc8d4b41" name="JsonPath RegEx Match"><con:configuration><path>[0].name</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>Taiwan</regEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="972ddc38-4e32-48b7-8a17-986eebbd9745" name="Script Assertion"><con:configuration><scriptText>//check response time
+assert messageExchange.timeTaken &lt; 4000
+
+//check for Endpoint
+def endpoint = "https://restcountries.eu/rest/v2/name/taiwan"
+assert messageExchange.getEndpoint() == endpoint
+
+//check for TimeTaken
+ log.info messageExchange.getTimeTaken()  
+
+ //check for header
+assert messageExchange.responseHeaders["Transfer-Encoding"] != null
+
+//check attachments
+assert messageExchange.responseAttachments.length == 0
+
+//validate response nodes
+//def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+//def requsetHolder = groovyUtils.getXmlHolder( messageExchange.requestContent )
+//def responseHolder = groovyUtils.getXmlHolder( messageExchange.responseContent )
+//def nameVal = responseHolder.getNodeValue("name")
+//assert nameVal == "Taiwan"
+
+//to get response
+//def resp = messageExchange.responseContentAsXml.toString()
+//get json response
+import groovy.json.JsonSlurper
+def responseMessage = messageExchange.response.responseContent
+def json = new JsonSlurper().parseText(responseMessage)
+
+//assert node values
+log.info json.name
+assert json.capital.toString() != null
+assert json.name.toString() == "[Taiwan]"
+
+testStepName = messageExchange.modelItem.testStep.name//to get the Test Step Name
+log.info testStepName
+xmlHold = messageExchange.responseContentAsXml.toString()  //to store the response as Xml string</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="countryName" value="taiwan" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>countryName</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
